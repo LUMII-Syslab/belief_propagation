@@ -10,7 +10,7 @@ from SomePropagationV import SomePropagationV
 
 class BeliefPropagation(SomePropagationV):
 
-    def __init__(self, nVars, clauses, max_iter=10, eps=0.05, verbose=False):
+    def __init__(self, nVars, clauses, max_iter=10, eps=0.09, verbose=False):
         super().__init__(nVars, clauses, max_iter, eps, verbose, 'delta', 'gamma')
         self.generateRandomVariableStates()
 

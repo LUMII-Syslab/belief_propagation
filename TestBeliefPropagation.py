@@ -2,8 +2,8 @@
 
 import unittest
 from DimacsFile import DimacsFile
-from bp import BeliefPropagation
-#from bpV import BeliefPropagation
+#from bp import BeliefPropagation
+from bpV import BeliefPropagation
 from VariableAssignment import VariableAssignment
 
 
@@ -18,7 +18,6 @@ def test_cnf(file_name):
         print(x)
         assignment = VariableAssignment(df.numberOfVars(), df.clauses())
         assignment.assign_all(x)
-        df.clauses()
         return assignment.satisfiable()
 
 class MyTestCase(unittest.TestCase):
